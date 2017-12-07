@@ -7,7 +7,8 @@ import org.junit.runner.RunWith;
 // import org.springframework.boot.SpringApplicationConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+// import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
 
@@ -15,7 +16,8 @@ import java.util.List;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
-@RunWith(SpringJUnit4ClassRunner.class)
+@RunWith(SpringRunner.class)
+// @RunWith(SpringJUnit4ClassRunner.class)      // also deprecated in favor of SpringRunner.class
 // @SpringApplicationConfiguration(App.class)   // deprecated
 @SpringBootTest
 public class ShipwreckRepositoryIntegrationTest {
